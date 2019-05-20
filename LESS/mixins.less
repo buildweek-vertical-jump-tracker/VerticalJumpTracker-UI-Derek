@@ -1,0 +1,23 @@
+// Color and font style mixins
+.theme-style {
+  background-color: @main-color;
+  color: @secondary-color;
+}
+
+// Button Style Mixins
+.custom-button(@width, @height) {
+  width: @width;
+  height: @height;
+  color: @main-bg;
+  font-size: 1.7rem;
+  text-align: center;
+  background-color: @button-bg;
+  border-radius: 10px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: white;
+    color: @button-bg;
+    border: 1px solid black;
+  }
+}

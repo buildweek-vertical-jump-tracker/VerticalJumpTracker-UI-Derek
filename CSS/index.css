@@ -2,6 +2,16 @@
   background-color: #000080;
   color: #cdcdcd;
 }
+.mobile-format {
+  width: 95%;
+  align-content: center;
+  justify-content: center;
+  margin: 10px auto;
+}
+.desktop-format {
+  width: 100%;
+  max-width: 1024px;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -138,7 +148,7 @@ html {
 }
 html,
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "oxygen";
 }
 h1 {
   font-size: 4rem;
@@ -165,22 +175,53 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (min-width: 501px) and (max-width: 1500px) {
+  .container {
+    width: 100%;
+    max-width: 1024px;
+  }
+}
 header {
   margin-bottom: 15px;
+  background-image: url(/Assets/Images/rugby-jump.jpg);
+  height: 80vh;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
 }
 header .header {
   max-width: 500px;
   width: 100%;
-  height: 75px;
-  background-color: #000080;
-  color: #cdcdcd;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 2;
 }
-header .header h1 {
+@media (min-width: 501px) and (max-width: 1500px) {
+  header .header {
+    width: 100%;
+    max-width: 1024px;
+  }
+}
+header .header .menu-button {
+  max-width: 10%;
+  height: auto;
+}
+@media (min-width: 501px) and (max-width: 1500px) {
+  header .header .menu-button {
+    max-width: 6%;
+  }
+}
+header .header .logo {
   margin: 0;
-  font-size: 48px;
+  margin-right: 2rem;
+  font-size: 4rem;
+  text-decoration: none;
+  color: #000080;
 }
 .menu-button {
   position: absolute;
@@ -192,21 +233,22 @@ header .header h1 {
   position: fixed;
   top: 75px;
   left: 0;
-  width: 350px;
-  height: 100vh;
-  /* This give the height 100% of the screen or, '100% of View Height' */
+  width: 25vh;
+  height: 70vh;
   background-color: #000080;
   border: 1px solid #cdcdcd;
   border-left: none;
   border-bottom: none;
   z-index: 2;
-  /* This set the layer level of the element, it has precendence over initial level of 1*/
 }
-.menu ul li {
+.menu a {
   list-style-type: none;
-  font-size: 32px;
+  color: #cdcdcd;
+  font-size: 3rem;
   padding: 30px 0;
   text-align: center;
+  text-decoration: none;
+  display: block;
 }
 .menu--open {
   display: block;
@@ -221,6 +263,35 @@ header .header h1 {
   justify-content: center;
   align-items: center;
 }
+@media (min-width: 501px) and (max-width: 1500px) {
+  .footer {
+    width: 100%;
+    max-width: 1024px;
+  }
+}
 .footer p {
   text-align: center;
+}
+#banner {
+  background: url(../img/bg.jpg);
+  background-size: cover;
+  padding-top: 80px;
+  background-attachment: fixed;
+  position: relative;
+}
+.main-content-container {
+  display: flex;
+  width: 95%;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 2rem;
+}
+.main-content-container .main-content {
+  margin: auto;
+  width: 95%;
+}
+.main-content-container .main-p {
+  width: 90%;
+  margin: auto;
 }

@@ -21,19 +21,20 @@
 // Banner style
 
 // Button Style Mixins
-.custom-button(@width, @height) {
-  width: @width;
-  height: @height;
-  color: @main-bg;
+.custom-button {
+  width: 18rem;
+  height: 3rem;
+  color: @main-color;
   font-size: 1.7rem;
   text-align: center;
-  background-color: @button-bg;
-  border-radius: 10px;
+  background-color: @secondary-color;
+  border-radius: 3px;
   cursor: pointer;
+  margin: 3rem 1rem;
 
   &:hover {
-    background-color: white;
-    color: @button-bg;
+    background-color: @main-color;
+    color: @secondary-color;
     border: 1px solid black;
   }
 }

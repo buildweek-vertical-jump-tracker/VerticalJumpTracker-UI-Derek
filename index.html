@@ -10,26 +10,35 @@
   </head>
   <body>
     <section class="container">
-      <header class="banner head-banner">
-        <!-- Menu -->
-        <div class="header">
-          <img class="menu-button" src="Assets/Images/menu2.png" />
-          <a href="index.html" class="logo">Vert-Tracker</a>
-          <!-- <button class="hamburger hamburger--spin is-active" type="button">
+      <header>
+        <div class="banner">
+          <!-- Menu -->
+          <div class="header">
+            <img class="menu-button" src="Assets/Images/menu2.png" />
+            <a href="index.html" class="logo">Vert-Tracker</a>
+            <!-- <button class="hamburger hamburger--spin is-active" type="button">
             <span class="hamburger-box">
                 <span class="hamburger-inner"></span>
             </span>
             </button> -->
+          </div>
+          <nav class="menu">
+            <a href="index.html">Home</a>
+            <a href="#">My Vert-Tracker</a>
+            <a href="about.html">About Us</a>
+            <a href="#login">Sign In/Sign Up</a>
+          </nav>
         </div>
-        <nav class="menu">
-          <a href="#">Home</a>
-          <a href="#">My Vert-Tracker</a>
-          <a href="about.html">About</a>
-          <a href="#login">Sign In/Sign Up</a>
-        </nav>
       </header>
       <!-- Main Content -->
       <section class="main-content-container">
+        <section class="login-section">
+          <h2 id="login">Join Us!</h2>
+          <div class="buttons-container">
+            <button class="custom-button">Log in</button>
+            <button class="custom-button">Sign Up</button>
+          </div>
+        </section>
         <section class="intro main-content">
           <img class="top-banner" src="Assets/Images/dunk.jpg" />
           <h2>Mission</h2>
@@ -74,11 +83,6 @@
             pretium arcu bibendum eu. Duis convallis posuere orci tincidunt
             euismod. Donec pellentesque diam dolor,
           </p>
-        </section>
-
-        <section class="workouts main-content">
-          <h2 id="login">Join Us!</h2>
-          <button>Sign Up</button>
         </section>
       </section>
       <footer class="footer">

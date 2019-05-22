@@ -16,6 +16,10 @@
   margin: 2rem;
 
   .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
     margin: auto;
     width: 95%;
   }
@@ -23,5 +27,23 @@
   .main-p {
     width: 90%;
     margin: auto;
+  }
+  .login-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin: 3rem auto;
+    width: 95%;
+    .buttons-container {
+      display: flex;
+      flex-direction: column;
+      @media @desktop {
+        flex-direction: row;
+      }
+      button {
+        .custom-button();
+      }
+    }
   }
 }

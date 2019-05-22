@@ -4,6 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oxygen&display=swap"
+      rel="stylesheet"
+    />
     <script src="JS/index.js" async></script>
     <link rel="stylesheet" href="CSS/index.css" />
     <title>Document</title>
@@ -24,7 +34,7 @@
           <a href="index.html#login">Sign In/Sign Up</a>
         </nav>
         <div class="pg-title">
-          <!-- <h1>About Us</h1> -->
+          <h1>About Us</h1>
         </div>
       </header>
       <!-- List of Team Members -->
@@ -34,11 +44,22 @@
             <img
               class="member-img"
               src="https://ca.slack-edge.com/T4JUEB3ME-UD03ELVCP-534b5d7c3f5a-72"
+              data-toggle="modal"
+              data-target="#nikita-modal"
             />
+
             <h2>Meet Nikita!</h2>
             <p class="member-p">
               Team Leader
             </p>
+            <!-- <button
+              type="button"
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#exampleModalCenter"
+            >
+              Launch demo modal
+            </button> -->
           </section>
         </div>
         <div class="mem-card">
@@ -46,6 +67,8 @@
             <img
               class="member-img"
               src="https://ca.slack-edge.com/T4JUEB3ME-UFGBG5M6G-cdca0219a22e-72"
+              data-toggle="modal"
+              data-target="#andrew-modal"
             />
             <h2>Meet Andrew!</h2>
             <p class="member-p">
@@ -58,6 +81,8 @@
             <img
               class="member-img"
               src="https://ca.slack-edge.com/T4JUEB3ME-UFCB5NRE2-139af4a401d3-72"
+              data-toggle="modal"
+              data-target="#charles-modal"
             />
             <h2>Meet Charles!</h2>
             <p class="member-p">
@@ -70,6 +95,8 @@
             <img
               class="member-img"
               src="https://ca.slack-edge.com/T4JUEB3ME-UFHQWN1LK-377cd0266f28-72"
+              data-toggle="modal"
+              data-target="#derek-modal"
             />
             <h2>Meet Derek!</h2>
             <p class="member-p">
@@ -82,6 +109,8 @@
             <img
               class="member-img"
               src="https://ca.slack-edge.com/T4JUEB3ME-UH7QD55TQ-20c17427be6d-72"
+              data-toggle="modal"
+              data-target="#clark-modal"
             />
             <h2>Meet Clark!</h2>
             <p class="member-p">
@@ -90,10 +119,220 @@
           </section>
         </div>
       </section>
+      <!-- Nikita Modal -->
+      <div
+        class="modal fade"
+        id="nikita-modal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">
+                Nikitas Role
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Andrew Modal -->
+      <div
+        class="modal fade"
+        id="andrew-modal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">
+                Andrews Role
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Charles Modal -->
+      <div
+        class="modal fade"
+        id="charles-modal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">
+                Charles' Role
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Derek Modal -->
+      <div
+        class="modal fade"
+        id="derek-modal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">
+                Dereks' Role
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Clark Modal -->
+      <div
+        class="modal fade"
+        id="clark-modal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">
+                Clarks' Role
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
       <footer class="footer">
         <!-- Copyright -->
         <p class="copyright">Copyright 2019</p>
       </footer>
     </section>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

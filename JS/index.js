@@ -70,3 +70,22 @@ const clark = new teamMember({
   position: "UI Designer",
   jobDescription: "Worked with..."
 });
+
+const teamMembers = [nikita, andrew, charles, derek, clark];
+
+const memberCards = document.querySelectorAll(".mem-card h2");
+
+memberCards.forEach((card, index) => {
+  card.textContent = `Meet ${teamMembers[index].name}!`;
+});
+
+//Member img Description Event
+
+const memImage = document.querySelectorAll(".member-img");
+console.log(memImage);
+
+memImage.forEach(p =>
+  p.addEventListener("dblclick", event => {
+    alert("description");
+  })
+);

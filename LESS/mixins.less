@@ -30,12 +30,14 @@
   background-color: @secondary-color;
   border-radius: 3px;
   cursor: pointer;
-  margin: 3rem 1rem;
+  margin: 1.5rem 1rem;
   border: 1px solid @main-color;
+  @media @desktop {
+    margin: 3rem 3rem;
+  }
 
   &:hover {
     background-color: @main-color;
     color: @secondary-color;
-    // border: 1px solid black;
   }
 }

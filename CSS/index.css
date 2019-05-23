@@ -21,8 +21,13 @@
   background-color: #cdcdcd;
   border-radius: 3px;
   cursor: pointer;
-  margin: 3rem 1rem;
+  margin: 1.5rem 1rem;
   border: 1px solid #000080;
+}
+@media (min-width: 501px) {
+  .custom-button {
+    margin: 3rem 3rem;
+  }
 }
 .custom-button:hover {
   background-color: #000080;
@@ -166,6 +171,13 @@ html,
 body {
   font-family: "Oxygen", sans-serif;
 }
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Oxygen", sans-serif;
+}
 h1 {
   font-size: 4rem;
 }
@@ -267,7 +279,7 @@ img {
 .banner .header .logo {
   margin: 0;
   margin-right: 5rem;
-  font-size: 4rem;
+  font-size: 3rem;
   text-decoration: none;
   color: #cdcdcd;
   font-weight: bolder;
@@ -276,6 +288,11 @@ img {
 @media (min-width: 0px) and (max-width: 360px) {
   .banner .header .logo {
     font-size: 2.5rem;
+  }
+}
+@media (min-width: 501px) {
+  .banner .header .logo {
+    font-size: 4rem;
   }
 }
 .menu-button {
@@ -342,6 +359,9 @@ img {
   margin: auto;
   width: 95%;
 }
+.main-content-container .main-content h2 {
+  margin-bottom: 2rem;
+}
 .main-content-container .main-p {
   width: 90%;
   margin: auto;
@@ -372,8 +392,13 @@ img {
   background-color: #cdcdcd;
   border-radius: 3px;
   cursor: pointer;
-  margin: 3rem 1rem;
+  margin: 1.5rem 1rem;
   border: 1px solid #000080;
+}
+@media (min-width: 501px) {
+  .main-content-container .login-section .buttons-container button {
+    margin: 3rem 3rem;
+  }
 }
 .main-content-container .login-section .buttons-container button:hover {
   background-color: #000080;

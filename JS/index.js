@@ -40,25 +40,25 @@ class teamMember {
 }
 
 const nikita = new teamMember({
-  name: "Nikita Thomas",
+  name: "Nikita",
   position: "Team Leader",
   jobDescription: "Worked with..."
 });
 
 const andrew = new teamMember({
-  name: "Andrew Safran",
+  name: "Andrew",
   position: "Back End Design",
   jobDescription: "Worked with..."
 });
 
 const charles = new teamMember({
-  name: "Charles Rogers",
+  name: "Charles",
   position: "Front End Design",
   jobDescription: "Worked with..."
 });
 
 const derek = new teamMember({
-  name: "Derek Schwantner",
+  name: "Derek",
   position: "UI Designer",
   jobDescription: "Worked with..."
 });
@@ -66,7 +66,7 @@ const derek = new teamMember({
 console.log(derek);
 
 const clark = new teamMember({
-  name: "Clark Williams",
+  name: "Clark",
   position: "UI Designer",
   jobDescription: "Worked with..."
 });

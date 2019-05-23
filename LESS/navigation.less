@@ -1,0 +1,33 @@
+.menu-button {
+  position: absolute;
+  left: 20px;
+  cursor: pointer;
+}
+
+.menu {
+  display: none;
+  position: fixed;
+  top: 55px;
+  left: 0;
+  width: 25vh;
+  height: 70vh;
+  background-color: rgba(0, 0, 128, 0.7);
+  border: 1px solid #cdcdcd;
+  border-left: none;
+  border-bottom: none;
+  z-index: 2;
+}
+
+.menu a {
+  list-style-type: none;
+  color: @secondary-color;
+  font-size: 3rem;
+  padding: 30px 0;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+}
+
+.menu--open {
+  display: block;
+}

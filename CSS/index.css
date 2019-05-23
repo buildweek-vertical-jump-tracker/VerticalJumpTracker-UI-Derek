@@ -1,0 +1,514 @@
+.theme-style {
+  background-color: #000080;
+  color: #cdcdcd;
+}
+.mobile-format {
+  width: 95%;
+  align-content: center;
+  justify-content: center;
+  margin: 10px auto;
+}
+.desktop-format {
+  width: 100%;
+  max-width: 1600px;
+}
+.custom-button {
+  width: 18rem;
+  height: 3rem;
+  color: #000080;
+  font-size: 1.7rem;
+  text-align: center;
+  background-color: #cdcdcd;
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 1.5rem 1rem;
+  border: 1px solid #000080;
+}
+@media (min-width: 501px) {
+  .custom-button {
+    margin: 3rem 3rem;
+  }
+}
+.custom-button:hover {
+  background-color: #000080;
+  color: #cdcdcd;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: "Oxygen", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Oxygen", sans-serif;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (min-width: 501px) {
+  .container {
+    width: 100%;
+    max-width: 1600px;
+  }
+}
+.banner {
+  background-image: url(/Assets/Images/rugby-jump.jpg);
+  height: 80vh;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+}
+.banner h1 {
+  align-content: center;
+}
+.banner .tagline {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.banner .tagline h1 {
+  font-size: 4rem;
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  animation-name: fade;
+  animation-duration: 1s;
+  font-weight: bolder;
+  line-height: 5rem;
+}
+@media (min-width: 0px) and (max-width: 360px) {
+  .banner .tagline h1 {
+    font-size: 4rem;
+  }
+}
+.banner .tagline .intro {
+  font-size: 2rem;
+  margin-top: 2rem;
+  color: #000080;
+  font-weight: bold;
+  text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
+}
+.banner .header {
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+@media (min-width: 501px) {
+  .banner .header {
+    width: 100%;
+    max-width: 1600px;
+  }
+}
+.banner .header .menu-button {
+  max-width: 10%;
+  height: auto;
+  margin-top: 0.5rem;
+}
+@media (min-width: 501px) {
+  .banner .header .menu-button {
+    max-width: 6%;
+  }
+}
+.banner .header .logo {
+  margin: 0;
+  margin-right: 5rem;
+  font-size: 3rem;
+  text-decoration: none;
+  color: #cdcdcd;
+  font-weight: bolder;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+@media (min-width: 0px) and (max-width: 360px) {
+  .banner .header .logo {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 501px) {
+  .banner .header .logo {
+    font-size: 4rem;
+  }
+}
+.menu-button {
+  position: absolute;
+  left: 20px;
+  cursor: pointer;
+}
+.menu {
+  display: none;
+  position: fixed;
+  top: 55px;
+  left: 0;
+  width: 25vh;
+  height: 70vh;
+  background-color: rgba(0, 0, 128, 0.7);
+  border: 1px solid #cdcdcd;
+  border-left: none;
+  border-bottom: none;
+  z-index: 2;
+}
+.menu a {
+  list-style-type: none;
+  color: #cdcdcd;
+  font-size: 3rem;
+  padding: 30px 0;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+}
+.menu--open {
+  display: block;
+}
+.footer {
+  max-width: 500px;
+  width: 100%;
+  height: 50px;
+  background-color: #000080;
+  color: #cdcdcd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 501px) {
+  .footer {
+    width: 100%;
+    max-width: 1600px;
+  }
+}
+.footer p {
+  text-align: center;
+}
+.main-content-container {
+  display: flex;
+  width: 95%;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+}
+.main-content-container .main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  margin: auto;
+  width: 95%;
+}
+.main-content-container .main-content h2 {
+  margin-bottom: 2rem;
+}
+.main-content-container .main-p {
+  width: 90%;
+  margin: auto;
+}
+.main-content-container .login-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  margin: 3rem auto;
+  width: 95%;
+}
+.main-content-container .login-section .buttons-container {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 501px) {
+  .main-content-container .login-section .buttons-container {
+    flex-direction: row;
+  }
+}
+.main-content-container .login-section .buttons-container button {
+  width: 18rem;
+  height: 3rem;
+  color: #000080;
+  font-size: 1.7rem;
+  text-align: center;
+  background-color: #cdcdcd;
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 1.5rem 1rem;
+  border: 1px solid #000080;
+}
+@media (min-width: 501px) {
+  .main-content-container .login-section .buttons-container button {
+    margin: 3rem 3rem;
+  }
+}
+.main-content-container .login-section .buttons-container button:hover {
+  background-color: #000080;
+  color: #cdcdcd;
+}
+.head-banner {
+  background-image: url(/Assets/Images/office.jpg);
+  height: 80vh;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+}
+.head-banner h1 {
+  align-content: center;
+}
+.head-banner .header {
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+@media (min-width: 501px) {
+  .head-banner .header {
+    width: 100%;
+    max-width: 1600px;
+  }
+}
+.head-banner .header .about-logo {
+  margin: 0;
+  margin-right: 2rem;
+  font-size: 4rem;
+  text-decoration: none;
+  color: #cdcdcd;
+  font-weight: bolder;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+@media (min-width: 0px) and (max-width: 360px) {
+  .head-banner .header .about-logo {
+    font-size: 2.5rem;
+  }
+}
+.head-banner .pg-title {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.head-banner .pg-title h1 {
+  font-size: 8rem;
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+@media (min-width: 0px) and (max-width: 360px) {
+  .head-banner .pg-title h1 {
+    font-size: 4rem;
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.team-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(/Assets/Images/lights.jpg);
+}
+@media (min-width: 501px) {
+  .team-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+  }
+}
+.team-container .mem-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 95%;
+  flex-grow: 1;
+}
+@media (min-width: 501px) {
+  .team-container .mem-card {
+    width: 35%;
+  }
+}
+.team-container .member {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 2rem 3rem;
+}
+.team-container .member img {
+  border: 2px solid black;
+  cursor: pointer;
+}
+.team-container .member h2 {
+  font-size: 2rem;
+  margin: 1.3rem 2rem;
+  white-space: nowrap;
+}

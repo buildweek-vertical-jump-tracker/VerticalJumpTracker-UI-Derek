@@ -1,0 +1,86 @@
+.banner {
+  // margin-bottom: 15px;
+  background-image: url(/Assets/Images/rugby-jump.jpg);
+  height: 80vh;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  h1 {
+    align-content: center;
+  }
+  .tagline {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    h1 {
+      font-size: 4rem;
+      color: white;
+      text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+        1px 1px 0 #000;
+      animation-name: fade;
+      animation-duration: 1s;
+      font-weight: bolder;
+      line-height: 5rem;
+      @media @small {
+        font-size: 4rem;
+      }
+    }
+    .intro {
+      // width: 85%;
+      font-size: 2rem;
+      margin-top: 2rem;
+      color: @main-color;
+      font-weight: bold;
+      text-shadow: -1px -1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255),
+        -1px 1px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255);
+    }
+  }
+  .header {
+    max-width: 500px;
+    width: 100%;
+    // height: 75px;
+    // .theme-style();
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    @media @desktop {
+      .desktop-format();
+    }
+
+    .menu-button {
+      max-width: 10%;
+      height: auto;
+      margin-top: 0.5rem;
+      @media @desktop {
+        max-width: 6%;
+      }
+    }
+
+    .logo {
+      margin: 0;
+      margin-right: 5rem;
+      // font-family:
+      font-size: 3rem;
+      text-decoration: none;
+      color: @secondary-color;
+      font-weight: bolder;
+      text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+        1px 1px 0 #000;
+      @media @small {
+        font-size: 2.5rem;
+      }
+      @media @desktop {
+        font-size: 4rem;
+      }
+    }
+  }
+}

@@ -81,14 +81,14 @@ memberCards.forEach((card, index) => {
 
 //Member img Description Event
 
-const memImage = document.querySelectorAll(".member-img");
-console.log(memImage);
+// const memImage = document.querySelectorAll(".member-img");
+// console.log(memImage);
 
-memImage.forEach(p =>
-  p.addEventListener("dblclick", event => {
-    alert("description");
-  })
-);
+// memImage.forEach(p =>
+//   p.addEventListener("dblclick", event => {
+//     alert("description");
+//   })
+// );
 
 //scroll Nav Animation
 

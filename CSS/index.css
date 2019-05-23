@@ -10,7 +10,7 @@
 }
 .desktop-format {
   width: 100%;
-  max-width: 1024px;
+  max-width: 1600px;
 }
 .custom-button {
   width: 18rem;
@@ -22,11 +22,11 @@
   border-radius: 3px;
   cursor: pointer;
   margin: 3rem 1rem;
+  border: 1px solid #000080;
 }
 .custom-button:hover {
   background-color: #000080;
   color: #cdcdcd;
-  border: 1px solid black;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -194,11 +194,10 @@ img {
 @media (min-width: 501px) {
   .container {
     width: 100%;
-    max-width: 1024px;
+    max-width: 1600px;
   }
 }
 .banner {
-  margin-bottom: 15px;
   background-image: url(/Assets/Images/rugby-jump.jpg);
   height: 80vh;
   background-position: center center;
@@ -209,6 +208,35 @@ img {
 }
 .banner h1 {
   align-content: center;
+}
+.banner .tagline {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.banner .tagline h1 {
+  font-size: 4rem;
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  animation-name: fade;
+  animation-duration: 1s;
+  font-weight: bolder;
+  line-height: 5rem;
+}
+@media (min-width: 0px) and (max-width: 360px) {
+  .banner .tagline h1 {
+    font-size: 4rem;
+  }
+}
+.banner .tagline .intro {
+  font-size: 2rem;
+  margin-top: 2rem;
+  color: #000080;
+  font-weight: bold;
+  text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
 }
 .banner .header {
   max-width: 500px;
@@ -223,12 +251,13 @@ img {
 @media (min-width: 501px) {
   .banner .header {
     width: 100%;
-    max-width: 1024px;
+    max-width: 1600px;
   }
 }
 .banner .header .menu-button {
   max-width: 10%;
   height: auto;
+  margin-top: 0.5rem;
 }
 @media (min-width: 501px) {
   .banner .header .menu-button {
@@ -237,10 +266,17 @@ img {
 }
 .banner .header .logo {
   margin: 0;
-  margin-right: 2rem;
+  margin-right: 5rem;
   font-size: 4rem;
   text-decoration: none;
-  color: #000080;
+  color: #cdcdcd;
+  font-weight: bolder;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+@media (min-width: 0px) and (max-width: 360px) {
+  .banner .header .logo {
+    font-size: 2.5rem;
+  }
 }
 .menu-button {
   position: absolute;
@@ -285,26 +321,18 @@ img {
 @media (min-width: 501px) {
   .footer {
     width: 100%;
-    max-width: 1024px;
+    max-width: 1600px;
   }
 }
 .footer p {
   text-align: center;
-}
-#banner {
-  background: url(../img/bg.jpg);
-  background-size: cover;
-  padding-top: 80px;
-  background-attachment: fixed;
-  position: relative;
 }
 .main-content-container {
   display: flex;
   width: 95%;
   align-items: center;
   flex-direction: column;
-  justify-content: space-between;
-  margin: 2rem;
+  margin: auto;
 }
 .main-content-container .main-content {
   display: flex;
@@ -345,11 +373,11 @@ img {
   border-radius: 3px;
   cursor: pointer;
   margin: 3rem 1rem;
+  border: 1px solid #000080;
 }
 .main-content-container .login-section .buttons-container button:hover {
   background-color: #000080;
   color: #cdcdcd;
-  border: 1px solid black;
 }
 .head-banner {
   background-image: url(/Assets/Images/office.jpg);
@@ -376,7 +404,7 @@ img {
 @media (min-width: 501px) {
   .head-banner .header {
     width: 100%;
-    max-width: 1024px;
+    max-width: 1600px;
   }
 }
 .head-banner .header .about-logo {
@@ -385,6 +413,13 @@ img {
   font-size: 4rem;
   text-decoration: none;
   color: #cdcdcd;
+  font-weight: bolder;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+@media (min-width: 0px) and (max-width: 360px) {
+  .head-banner .header .about-logo {
+    font-size: 2.5rem;
+  }
 }
 .head-banner .pg-title {
   height: 100%;
@@ -393,12 +428,30 @@ img {
   align-items: center;
 }
 .head-banner .pg-title h1 {
+  font-size: 8rem;
   color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+@media (min-width: 0px) and (max-width: 360px) {
+  .head-banner .pg-title h1 {
+    font-size: 4rem;
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .team-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: url(/Assets/Images/lights.jpg);
 }
 @media (min-width: 501px) {
   .team-container {
@@ -416,7 +469,7 @@ img {
 }
 @media (min-width: 501px) {
   .team-container .mem-card {
-    width: 32%;
+    width: 35%;
   }
 }
 .team-container .member {

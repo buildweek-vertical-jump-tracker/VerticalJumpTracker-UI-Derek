@@ -331,6 +331,7 @@ img {
   height: 50px;
   background-color: #000080;
   color: #cdcdcd;
+  margin-top: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -47,7 +47,7 @@ const nikita = new teamMember({
 
 const andrew = new teamMember({
   name: "Andrew",
-  position: "Back End Design",
+  position: "Backend Design",
   jobDescription: "Worked with..."
 });
 
@@ -63,32 +63,26 @@ const derek = new teamMember({
   jobDescription: "Worked with..."
 });
 
-console.log(derek);
-
 const clark = new teamMember({
   name: "Clark",
   position: "UI Designer",
   jobDescription: "Worked with..."
 });
 
+//Using the name  and position properties for each user object to appear on the site introductions to each team member
 const teamMembers = [nikita, andrew, charles, derek, clark];
 
 const memberCards = document.querySelectorAll(".mem-card h2");
+
+const memberRole = document.querySelectorAll(".member-p");
 
 memberCards.forEach((card, index) => {
   card.textContent = `Meet ${teamMembers[index].name}!`;
 });
 
-//Member img Description Event
-
-// const memImage = document.querySelectorAll(".member-img");
-// console.log(memImage);
-
-// memImage.forEach(p =>
-//   p.addEventListener("dblclick", event => {
-//     alert("description");
-//   })
-// );
+memberRole.forEach((card, index) => {
+  card.textContent = `${teamMembers[index].position}`;
+});
 
 //scroll Nav Animation
 

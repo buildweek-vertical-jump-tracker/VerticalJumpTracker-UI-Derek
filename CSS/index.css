@@ -202,6 +202,7 @@ img {
   max-width: 500px;
   width: 100%;
   margin: 0 auto;
+  padding: 0%;
 }
 @media (min-width: 501px) {
   .container {
@@ -223,11 +224,13 @@ img {
 }
 .banner .tagline {
   height: 100%;
+  width: 95%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin: auto;
 }
 .banner .tagline h1 {
   font-size: 4rem;
@@ -280,7 +283,7 @@ img {
 }
 .banner .header .logo {
   margin: 0;
-  margin-right: 5rem;
+  margin-right: 3rem;
   font-size: 3rem;
   text-decoration: none;
   color: #cdcdcd;
@@ -333,7 +336,6 @@ img {
   height: 50px;
   background-color: #000080;
   color: #cdcdcd;
-  margin-top: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -408,6 +410,9 @@ img {
 .main-content-container .login-section .buttons-container button:hover {
   background-color: #000080;
   color: #cdcdcd;
+}
+.main-content-container .workouts .main-p {
+  margin-bottom: 3rem;
 }
 .head-banner {
   background-image: url(/Assets/Images/office.jpg);
